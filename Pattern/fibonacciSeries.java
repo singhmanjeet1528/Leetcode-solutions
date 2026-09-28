@@ -1,4 +1,4 @@
-class FibonacciIterative {
+class FibonacciSeries {
 
     static void printFibonacci(int n)
     {
@@ -21,3 +21,4 @@ class FibonacciIterative {
         printFibonacci(n);
     }
 }
+
