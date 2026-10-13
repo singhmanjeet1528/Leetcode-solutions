@@ -12,7 +12,7 @@ static int lowerBound(int[] arr, int target) {
         int mid = start + (end - start) / 2;
 
         if (arr[mid] >= target) {
-            index = mid;
+            index = mid; // Remember we are updating index only if it is a possible answer
             end = mid - 1;
         } else {
             start = mid + 1;
@@ -33,3 +33,8 @@ static int lowerBound(int[] arr, int target) {
        System.out.println(ans);
 }
 }
+
+//NOTE: LOWER BOUND, UPPER BOUND, LAST AND FIRST OCCURENCE ARE ALL SAME ONLY DIFFERENCE IS WHEN WE ARE UPDATING OUR INDEX 
+//i.e WE UPDATE INDEX ONLY IF IT IS A POSSIBLE ANSWER
+
+
